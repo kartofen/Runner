@@ -1,0 +1,17 @@
+F:\GitRepos\Console\Runner\RunnerCode\bin\Debug\netcoreapp3.1\RunnerCode.exe
+F:\GitRepos\Console\Runner\RunnerCode\bin\Debug\netcoreapp3.1\RunnerCode.deps.json
+F:\GitRepos\Console\Runner\RunnerCode\bin\Debug\netcoreapp3.1\RunnerCode.runtimeconfig.json
+F:\GitRepos\Console\Runner\RunnerCode\bin\Debug\netcoreapp3.1\RunnerCode.runtimeconfig.dev.json
+F:\GitRepos\Console\Runner\RunnerCode\bin\Debug\netcoreapp3.1\RunnerCode.dll
+F:\GitRepos\Console\Runner\RunnerCode\bin\Debug\netcoreapp3.1\RunnerCode.pdb
+F:\GitRepos\Console\Runner\RunnerCode\bin\Debug\netcoreapp3.1\Lib.dll
+F:\GitRepos\Console\Runner\RunnerCode\bin\Debug\netcoreapp3.1\Lib.pdb
+F:\GitRepos\Console\Runner\RunnerCode\obj\Debug\netcoreapp3.1\RunnerCode.csprojAssemblyReference.cache
+F:\GitRepos\Console\Runner\RunnerCode\obj\Debug\netcoreapp3.1\RunnerCode.AssemblyInfoInputs.cache
+F:\GitRepos\Console\Runner\RunnerCode\obj\Debug\netcoreapp3.1\RunnerCode.AssemblyInfo.cs
+F:\GitRepos\Console\Runner\RunnerCode\obj\Debug\netcoreapp3.1\RunnerCode.csproj.CoreCompileInputs.cache
+F:\GitRepos\Console\Runner\RunnerCode\obj\Debug\netcoreapp3.1\RunnerCode.csproj.CopyComplete
+F:\GitRepos\Console\Runner\RunnerCode\obj\Debug\netcoreapp3.1\RunnerCode.dll
+F:\GitRepos\Console\Runner\RunnerCode\obj\Debug\netcoreapp3.1\RunnerCode.pdb
+F:\GitRepos\Console\Runner\RunnerCode\obj\Debug\netcoreapp3.1\RunnerCode.genruntimeconfig.cache
+F:\GitRepos\Console\Runner\RunnerCode\bin\Debug\netcoreapp3.1\Colorful.Console.dll

@@ -1,0 +1,9 @@
+F:\GitRepos\Console\Runner\Lib\bin\Debug\netstandard2.0\Lib.deps.json
+F:\GitRepos\Console\Runner\Lib\bin\Debug\netstandard2.0\Lib.dll
+F:\GitRepos\Console\Runner\Lib\bin\Debug\netstandard2.0\Lib.pdb
+F:\GitRepos\Console\Runner\Lib\obj\Debug\netstandard2.0\Lib.csprojAssemblyReference.cache
+F:\GitRepos\Console\Runner\Lib\obj\Debug\netstandard2.0\Lib.AssemblyInfoInputs.cache
+F:\GitRepos\Console\Runner\Lib\obj\Debug\netstandard2.0\Lib.AssemblyInfo.cs
+F:\GitRepos\Console\Runner\Lib\obj\Debug\netstandard2.0\Lib.csproj.CoreCompileInputs.cache
+F:\GitRepos\Console\Runner\Lib\obj\Debug\netstandard2.0\Lib.dll
+F:\GitRepos\Console\Runner\Lib\obj\Debug\netstandard2.0\Lib.pdb
