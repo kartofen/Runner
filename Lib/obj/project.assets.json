@@ -2593,26 +2593,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\112\\.nuget\\packages\\": {}
+    "/home/ivancho/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "f:\\GitRepos\\Console\\Runner\\Lib\\Lib.csproj",
+      "projectUniqueName": "/mnt/f/GitRepos/Console/Runner/Lib/Lib.csproj",
       "projectName": "Lib",
-      "projectPath": "f:\\GitRepos\\Console\\Runner\\Lib\\Lib.csproj",
-      "packagesPath": "C:\\Users\\112\\.nuget\\packages\\",
-      "outputPath": "f:\\GitRepos\\Console\\Runner\\Lib\\obj\\",
+      "projectPath": "/mnt/f/GitRepos/Console/Runner/Lib/Lib.csproj",
+      "packagesPath": "/home/ivancho/.nuget/packages/",
+      "outputPath": "/mnt/f/GitRepos/Console/Runner/Lib/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\112\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/ivancho/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2650,7 +2648,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
       }
     }
   }

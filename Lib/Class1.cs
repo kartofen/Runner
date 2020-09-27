@@ -158,6 +158,16 @@ namespace Lib
             Environment.Exit(0);
         }
 
-        
+        public static bool IfLevelIsDuplicated(string[,] level0back, string endOftheLevel)
+        {
+            if(level0back[0, 5] == endOftheLevel)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

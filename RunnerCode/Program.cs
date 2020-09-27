@@ -3,7 +3,7 @@ using System.Threading;
 using Console = Colorful.Console;
 using Lib;
 
-namespace RunnerCode
+namespace RunnerGame
 {
     
     class Program
@@ -75,13 +75,35 @@ namespace RunnerCode
 
         public static ConsoleKeyInfo cki;
 
-        public static string[,] level3 = {
-            {" ", " ", " ", "|", " ", "end", " ", "|", " ", " ", " "},
+    public static string[,] level5 = {
+            {" ", " ", " ", "|", " ", "endlvl5", " ", "|", " ", " ", " "},
             {" ", "$", " ", "|", " ", " ", " ", "|", " ", " ", " "},
             {" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "},
-            {" ", " ", " ", "|", "o", "&", "o", "|", "o", "&", "o"},
-            {" ", " ", " ", "|", "[", "V", " ", "|", "[", "P", "]"},
-            {" ", " ", " ", "|", "o", "&", "o", "|", "o", "&", "o"},
+            {"o", "&", "o", "|", " ", "о", " ", "|", " ", "o", " "},
+            {"[", "V", "]", "|", " ", "V", " ", "|", " ", "&", " "},
+            {"o", "&", "o", "|", " ", "о", " ", "|", " ", "o", " "},
+            {" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "},
+            {" ", "$", " ", "|", " ", " ", " ", "|", " ", "$", " "},
+            {" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "},
+            {" ", " ", " ", "|", " ", "$", " ", "|", " ", " ", " "},
+            {" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "},
+            {" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "},
+            {" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "},
+            {" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "},
+            {"o", "&", "o", "|", " ", " ", " ", "|", "o", "&", "o"},
+            {"[", "М", "]", "|", " ", " ", " ", "|", "[", "P", "]"},
+            {"o", "&", "o", "|", " ", "$", " ", "|", "o", "&", "o"},
+            {" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "},
+            {" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "},
+            {" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "},
+        };
+        public static string[,] level4 = {
+            {" ", " ", " ", "|", " ", "endlvl4", " ", "|", " ", " ", " "},
+            {" ", "$", " ", "|", " ", " ", " ", "|", " ", " ", " "},
+            {" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "},
+            {"o", "&", "o", "|", "o", "&", "o", "|", " ", " ", " "},
+            {"[", "V", "]", "|", "[", "V", "]", "|", " ", " ", " "},
+            {"o", "&", "o", "|", "o", "&", "o", "|", " ", " ", " "},
             {" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "},
             {" ", "$", " ", "|", " ", " ", " ", "|", " ", " ", " "},
             {" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "},
@@ -89,21 +111,43 @@ namespace RunnerCode
             {" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "},
             {" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "},
             {" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "},
+            {" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "},
+            {" ", " ", " ", "|", " ", " ", " ", "|", "o", "&", "o"},
+            {" ", " ", " ", "|", " ", " ", " ", "|", "[", "P", "]"},
+            {" ", " ", " ", "|", " ", "$", " ", "|", "o", "&", "o"},
+            {" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "},
+            {" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "},
+            {" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "},
+        };
+        public static string[,] level3 = {
+            {" ", " ", " ", "|", " ", "endlvl3", " ", "|", " ", " ", " "},
+            {" ", "$", " ", "|", " ", " ", " ", "|", " ", " ", " "},
+            {" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "},
+            {" ", "o", " ", "|", " ", " ", " ", "|", " ", " ", " "},
+            {"[", "&", "]", "|", " ", "o", " ", "|", " ", " ", " "},
+            {" ", "o", " ", "|", "[", "&", "]", "|", " ", " ", " "},
+            {" ", " ", " ", "|", " ", "o", " ", "|", " ", " ", " "},
+            {" ", "$", " ", "|", " ", " ", " ", "|", " ", " ", " "},
+            {" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "},
+            {" ", " ", " ", "|", " ", "$", " ", "|", " ", " ", " "},
+            {"o", "&", "o", "|", " ", " ", " ", "|", " ", " ", " "},
+            {"[", "V", "]", "|", " ", " ", " ", "|", " ", " ", " "},
+            {"o", "&", "o", "|", " ", " ", " ", "|", " ", " ", " "},
             {" ", " ", " ", "|", " ", " ", " ", "|", "o", "&", "o"},
             {" ", " ", " ", "|", " ", "$", " ", "|", "[", "P", "]"},
-            {" ", " ", " ", "|", " ", "$", " ", "|", "o", "&", "o"},
+            {" ", " ", " ", "|", " ", " ", " ", "|", "o", "&", "o"},
             {" ", " ", " ", "|", " ", "$", " ", "|", " ", " ", " "},
             {" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "},
             {" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "},
             {" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "},
         };
         public static string[,] level2 = {
-            {" ", " ", " ", "|", " ", "end", " ", "|", " ", " ", " "},
+            {" ", " ", " ", "|", " ", "endlvl2", " ", "|", " ", " ", " "},
             {" ", "$", " ", "|", " ", " ", " ", "|", " ", " ", " "},
             {" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "},
-            {" ", " ", " ", "|", "o", "&", "o", "|", "o", "&", "o"},
-            {" ", " ", " ", "|", "[", "V", " ", "|", "[", "P", "]"},
-            {" ", " ", " ", "|", "o", "&", "o", "|", "o", "&", "o"},
+            {"o", "&", "o", "|", " ", " ", " ", "|", "o", "&", "o"},
+            {"[", "V", "]", "|", " ", " ", " ", "|", "[", "P", "]"},
+            {"o", "&", "o", "|", " ", " ", " ", "|", "o", "&", "o"},
             {" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "},
             {" ", "$", " ", "|", " ", " ", " ", "|", " ", " ", " "},
             {" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "},
@@ -113,19 +157,19 @@ namespace RunnerCode
             {" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "},
             {" ", " ", " ", "|", " ", " ", " ", "|", "o", "&", "o"},
             {" ", " ", " ", "|", " ", " ", " ", "|", "[", "P", "]"},
-            {" ", " ", " ", "|", " ", "$", " ", "|", "o", "&", "o"},
+            {" ", " ", " ", "|", " ", " ", " ", "|", "o", "&", "o"},
             {" ", " ", " ", "|", " ", "$", " ", "|", " ", " ", " "},
             {" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "},
             {" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "},
             {" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "},
         };
         public static string[,] level1 = {
-            {" ", " ", " ", "|", " ", "end", " ", "|", " ", " ", " "},
+            {" ", " ", " ", "|", " ", "endlv1", " ", "|", " ", " ", " "},
             {" ", "$", " ", "|", " ", "$", " ", "|", " ", " ", " "},
             {" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "},
-            {"o", "&", "o", "|", " ", " ", " ", "|", "o", "&", "o"},
-            {"[", "V", "]", "|", " ", " ", " ", "|", "[", "P", "]"},
-            {"o", "&", "o", "|", " ", "$", " ", "|", "o", "&", "o"},
+            {" ", " ", " ", "|", "o", "&", "o", "|", "o", "&", "o"},
+            {" ", "$", " ", "|", "[", "V", "]", "|", "[", "P", "]"},
+            {" ", " ", " ", "|", "o", "&", "o", "|", "o", "&", "o"},
             {" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "},
             {" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "},
             {" ", " ", " ", "|", " ", " ", " ", "|", " ", " ", " "},
@@ -180,24 +224,24 @@ namespace RunnerCode
         //every pair of two ints represent a car's char position, first is the row then the column
         public static int[,] YouCarCoords = {
             {7, 4 /*o*/, 7, 5 /*#*/, 7, 6 /*o*/},
-            {8, 4 /*[*/, 8, 5 /*C*/, 8, 6 /*]*/},
+            {8, 4 /*[*/, 8, 5 /*@*/, 8, 6 /*]*/},
             {9, 4 /*o*/, 9, 5 /*#*/, 9, 6 /*o*/}
         };
         static void Main(string[] args)
         {
+            Console.CursorVisible = false;
             Menu();
         }
 
         static void Menu()
-        {
-            Console.CursorVisible = false;
+        {   
             Console.Clear();
             Console.WriteAscii("         Runner");
-            Lib.Class1.CenterText("┌─────────────────┐");
-            Lib.Class1.CenterText("│ 1 - Start Game  │");
-            Lib.Class1.CenterText("│ 2 - How To Play │");
-            Lib.Class1.CenterText("│                 │");
-            Lib.Class1.CenterText("└─────────────────┘");
+            Class1.CenterText("┌─────────────────┐");
+            Class1.CenterText("│ 1 - Start Game  │");
+            Class1.CenterText("│ 2 - How To Play │");
+            Class1.CenterText("│                 │");
+            Class1.CenterText("└─────────────────┘");
             var key = Console.ReadKey();
             
             if(key.KeyChar == '1')
@@ -219,40 +263,38 @@ namespace RunnerCode
             Console.Clear();
             Console.WriteAscii("         Runner");
             Console.WriteLine("");
-            Lib.Class1.CenterText("┌───────────────────┐");      
-            Lib.Class1.CenterText("│  The car with C   │");
-            Lib.Class1.CenterText("│ is you            │");
-            Lib.Class1.CenterText("│                   │"); 
-            Lib.Class1.CenterText("│  Use the arrow    │");
-            Lib.Class1.CenterText("│ keys to move left │");
-            Lib.Class1.CenterText("│ and right         │");
-            Lib.Class1.CenterText("│                   │");
-            Lib.Class1.CenterText("│  Try to get as    │");
-            Lib.Class1.CenterText("│ much money($) as  │");
-            Lib.Class1.CenterText("│ you can           │");
-            Lib.Class1.CenterText("│                   │");
-            Lib.Class1.CenterText("└───────────────────┘");
+            Class1.CenterText("┌───────────────────┐");      
+            Class1.CenterText("│  The car with @   │");
+            Class1.CenterText("│ is you            │");
+            Class1.CenterText("│                   │"); 
+            Class1.CenterText("│  Use the arrow    │");
+            Class1.CenterText("│ keys to move left │");
+            Class1.CenterText("│ and right         │");
+            Class1.CenterText("│                   │");
+            Class1.CenterText("│  Try to get as    │");
+            Class1.CenterText("│ much money($) as  │");
+            Class1.CenterText("│ you can           │");
+            Class1.CenterText("│                   │");
+            Class1.CenterText("└───────────────────┘");
             Console.ReadLine();
             Menu();
         }
 
         static void StartGame()
-        {
-            Console.CursorVisible = false;
-            
+        {      
             while (1<2)
             {
                 Console.Clear(); 
                 Console.WriteAscii("         Runner");
                 Console.WriteLine("");
-                Lib.Class1.CenterText("HighScore:" + Class1.highscore);
-                Lib.Class1.CenterText("┌─────────────┐");
-                Lib.Class1.WritingLevels(level0);
-                Lib.Class1.CenterText("└─────────────┘");
+                Class1.CenterText("HighScore:" + Class1.highscore);
+                Class1.CenterText("┌─────────────┐");
+                Class1.WritingLevels(level0);
+                Class1.CenterText("└─────────────┘");
                 Console.WriteLine("");
                 IfGameIsOver(false, false);
                 ListenForKeys();
-                Thread.Sleep(425);
+                Thread.Sleep(350);
                 ListenForKeys();
                 MovingBackground();
             }
@@ -280,22 +322,63 @@ namespace RunnerCode
             bool Haslevel1Ended = 
             level0back[0, 0] == level0back[19, 0] && level0back[0, 1] == level0back[19, 1] && level0back[0, 2] == level0back[19, 2] && level0back[0, 3] == level0back[19, 3] &&
             level0back[0, 4] == level0back[19, 4] && level0back[0, 5] == level0back[19, 5] && level0back[0, 6] == level0back[19, 6] && level0back[0, 7] == level0back[19, 7] && level0back[0, 8] == level0back[19, 8] &&
-            level0back[0, 9] == level0back[19, 9] ;
+            level0back[0, 9] == level0back[19, 9];
 
             if(Haslevel1Ended == true)
             {
                 Random rand = new Random();
-                int randIndex = rand.Next(1, 4);
+                int randIndex = rand.Next(1, 6);
                 switch(randIndex)
                 {
                     case 1:
-                        Lib.Class1.ReplaceFullArrays(level1, level0back);
+                        if(Class1.IfLevelIsDuplicated(level0back, "endlvl1") == true)
+                        {
+                            MovingBackground();
+                        }
+                        else
+                        {
+                            Class1.ReplaceFullArrays(level1, level0back);
+                        }
                     break;
                     case 2:
-                        Lib.Class1.ReplaceFullArrays(level2, level0back);
+                        if(Class1.IfLevelIsDuplicated(level0back, "endlvl2") == true)
+                        {
+                            MovingBackground();
+                        }
+                        else
+                        {
+                            Class1.ReplaceFullArrays(level2, level0back);
+                        }
                     break;
                     case 3:
-                        Lib.Class1.ReplaceFullArrays(level3, level0back);
+                        if(Class1.IfLevelIsDuplicated(level0back, "endlvl3") == true)
+                        {
+                            MovingBackground();
+                        }
+                        else
+                        {
+                            Class1.ReplaceFullArrays(level3, level0back);
+                        }
+                    break;
+                    case 4:
+                        if(Class1.IfLevelIsDuplicated(level0back, "endlvl4") == true)
+                        {
+                            MovingBackground();
+                        }
+                        else
+                        {
+                            Class1.ReplaceFullArrays(level4, level0back);
+                        }
+                    break;
+                    case 5:
+                        if(Class1.IfLevelIsDuplicated(level0back, "endlvl5") == true)
+                        {
+                            MovingBackground();
+                        }
+                        else
+                        {
+                            Class1.ReplaceFullArrays(level5, level0back);
+                        }
                     break;
                 }
                 
@@ -331,8 +414,6 @@ namespace RunnerCode
             Class1.Replacing(level0back, 2, level0back, 3);
             Class1.Replacing(level0back, 1, level0back, 2);
             Class1.Replacing(level0back, 0, level0back, 1);
-
-            
             Class1.YouCarRepositioning(YouCarCoords, level0);
             return;
 
